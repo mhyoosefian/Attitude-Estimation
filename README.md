@@ -66,6 +66,21 @@ The script can also produce a video showing the onboard camera images next to th
 - With heavy-tailed (Student's-t) magnetometer noise, all filters degrade, and yaw degrades the most.
 - On EuRoC, which has no magnetometer, yaw is unobservable and drifts for all filters. Pitch and roll show chattering because the drone's accelerations violate the assumption that body acceleration is negligible compared with gravity; the EEKF stays consistent but is much slower, since it solves a semidefinite program at many time steps.
 
+## Citation
+
+If you use the code in your research work, please cite the following paper:
+
+```
+@inproceedings{nooshabadi2025state,
+  title={State Estimation for Linear Systems with Non-Gaussian Measurement Noise via Dynamic Programming},
+  author={Nooshabadi, Mohammad Hussein Yoosefian and Lessard, Laurent},
+  booktitle={2025 IEEE 64th Conference on Decision and Control (CDC)},
+  pages={5612--5617},
+  year={2025},
+  organization={IEEE}
+}
+```
+
 ## Data
 
 The EuRoC data are from:
